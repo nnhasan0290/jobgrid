@@ -123,6 +123,9 @@ add_action( 'after_setup_theme', 'portfolio_content_width', 0 );
  */
 function portfolio_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri( ).'/assets/css/bootstrap.min.css');
+	wp_enqueue_style( 'animate', get_template_directory_uri( ).'/assets/css/animate.css');
+	wp_enqueue_style( 'LineIcons', get_template_directory_uri( ).'/assets/css/Lineicons.2.0.css');
+	wp_enqueue_style( 'tiny-slider', get_template_directory_uri( ).'/assets/css/tiny-slider.css');
 	wp_enqueue_style( 'portfolio-main', get_template_directory_uri( ).'/assets/css/main.css');
 	wp_enqueue_style( 'portfolio-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'portfolio-style', 'rtl', 'replace' );

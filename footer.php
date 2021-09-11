@@ -14,18 +14,21 @@
 
   <footer class="footer">
    
-
     <div class="footer-middle">
       <div class="container">
         <div class="row">
            <div class="col-lg-4 col-md-6 col-12">
              <div class="f-about single-footer">
                 <div class="logo">
-                  <a href="index.html"><?php echo the_custom_logo(  );?></a>
+                  <a href="<?php home_url(  ); ?>"><?php  the_custom_logo(  );?></a>
                 </div>
-                <?php
-                get_sidebar('sidebar-1' );
-                ?>
+                    <?php
+                    if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+                      return;
+                    }
+                    dynamic_sidebar( 'sidebar-1' );
+                    ?>
+
               </div>
             </div>
 

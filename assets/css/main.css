@@ -819,7 +819,6 @@ ul, ol {
     position: relative;
     padding: 70px 0;
     padding-top: 150px;
-    background-image: url(../images/breadcrumb/breadcrumb-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1242,8 +1241,13 @@ ul, ol {
     padding: 0;
 }
 
-.navbar-brand img {
+/* .navbar-brand img {
     width: 150px;
+} */
+
+.navbar img.custom-logo {
+    height: auto;
+    width: 230px;
 }
 
 .navbar-toggler {
@@ -2720,6 +2724,7 @@ ul, ol {
 .latest-news-area .single-news .content-body .meta-details ul {
     display: block;
     margin-top: 20px;
+    margin-left: 0;
 }
 
 .latest-news-area .single-news .content-body .meta-details ul li {
@@ -5640,8 +5645,9 @@ blockquote .shape {
     #scrollUp {
         bottom: 55px;
     }
-    .navbar-brand img {
-        width: 130px;
+    .navbar img.custom-logo {
+        height: auto;
+        width: 230px;
     }
     .header .button {
         margin: 0;
@@ -6032,8 +6038,9 @@ blockquote .shape {
     #scrollUp {
         bottom: 55px;
     }
-    .navbar-brand img {
-        width: 130px;
+    .navbar img.custom-logo {
+        height: auto;
+        width: 230px;
     }
     .header.index2 .navbar .navbar-nav .nav-item a {
         color: #081828;
